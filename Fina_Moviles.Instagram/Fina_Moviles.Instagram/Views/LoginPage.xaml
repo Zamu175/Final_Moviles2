@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Fina_Moviles.Instagram.Views.LoginPage"
+              NavigationPage.HasNavigationBar="False"
+             xmlns:tdr="clr-namespace:Fina_Moviles.Instagram.Helpers" BackgroundColor="#F2F1F2">
+
+    <StackLayout Orientation="Vertical" VerticalOptions="Center">
+        <Label FontSize="38" Text="Instagram" FontFamily="Billabong" 
+               FontAttributes="Bold" HorizontalOptions="Center"/>
+        <Entry x:Name="Usuario" Placeholder="{tdr:Translation Usuario}" />
+        <Entry x:Name="Password" Placeholder="{tdr:Translation Contrasena}" IsPassword="True" />
+        <Button Text="{tdr:Translation Ingresar}" Clicked="Ingresar_Click" />
+    </StackLayout>
+</ContentPage>

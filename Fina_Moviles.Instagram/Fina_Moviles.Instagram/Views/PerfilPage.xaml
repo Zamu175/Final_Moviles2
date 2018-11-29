@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Fina_Moviles.Instagram.Views.PerfilPage"
+             xmlns:tdr="clr-namespace:Fina_Moviles.Instagram.Helpers" BackgroundColor="#F2F1F2"
+             Title="Perfil">
+    <StackLayout Orientation="Vertical">
+        <StackLayout Orientation="Horizontal">
+            <Label Text="{Binding NomUsuario}"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Image Source="{Binding Imagen}"/>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="500"/>
+                <StackLayout Orientation="Vertical">
+                    <Label Text="{tdr:Translation Publicaciones}"/>
+                </StackLayout>
+                <Label Text="5000"/>
+                <StackLayout Orientation="Vertical">
+                    <Label Text="{tdr:Translation Seguidores}"/>
+                </StackLayout>
+                <Label Text="10"/>
+                <StackLayout Orientation="Vertical">
+                    <Label Text="{tdr:Translation Seguidos}"/>
+                </StackLayout>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="{Binding Nombre}"/>
+                <Button Text="{tdr:Translation EditarPerfil}"/>
+            </StackLayout>
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
+               
